@@ -1,0 +1,91 @@
+/* main body overall size style and padding */
+* {
+    
+    font-family: sans-serif;
+    line-height: 1.614em;
+    margin: 0;
+    padding: 0;
+    
+}
+/* margin-top is set to 1 to be right under nav bar */
+html {
+    font-size: 20px;
+    margin-top: 50px;
+}
+/*  */
+header {
+    display: flex;
+    justify-content: center;
+    
+    color: #000000;
+    border-style: double;
+    
+
+}
+main {
+    border-style: solid;
+    /* margin lets me decide where that block of info will be placed on the page */
+    /* distance form top and left respectively */
+    /* auto centers the block */
+    margin: 0em auto;
+    /* how wide is the block itself */
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.355);
+}
+nav {
+    position: fixed;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    background-color: #00f2ff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 29px;
+
+
+}
+#nav-aboutme {
+    padding: 0 4em;
+    text-decoration: none;
+}
+#nav-projects{
+    padding: 0 4em;
+    text-decoration: none;
+
+}
+nav a:hover {
+    background: #00b0ba;
+}
+/* distance from within the block top,left respectively */
+section{
+    padding: .5em 2em;
+}
+body {
+    background-color: #00f2ff;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    color: #0000008b;
+    padding: 0  0 1em  ;
+}
+
+/* set projects in row  */
+#projects {
+    display: flex;
+    flex-flow: row;
+    justify-content:center;
+    max-width: 900px;
+
+}
+/* resize image to fit */
+#projects img {
+    display: flex;
+    justify-content: center;
+    width: 10em;
+}
+/* set up text under image to fit  */
+article {
+    padding: 0 0 0 1em;
+}
