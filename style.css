@@ -1,91 +1,108 @@
 /* main body overall size style and padding */
 * {
-    
     font-family: sans-serif;
-    line-height: 1.614em;
     margin: 0;
     padding: 0;
-    
 }
 /* margin-top is set to 1 to be right under nav bar */
 html {
     font-size: 20px;
-    margin-top: 50px;
+    
 }
-/*  */
 header {
     display: flex;
     justify-content: center;
     
     color: #000000;
-    border-style: double;
-    
-
+    border-style: solid;
+}
+body {
+    background-color: #00f2ff;
 }
 main {
-    border-style: solid;
     /* margin lets me decide where that block of info will be placed on the page */
     /* distance form top and left respectively */
     /* auto centers the block */
-    margin: 0em auto;
+    margin: 0 auto;
     /* how wide is the block itself */
     max-width: 900px;
     background-color: rgba(255, 255, 255, 0.355);
+    line-height: 1.614em;
+    box-shadow:  0px 0px 20px red;
+
+
 }
+/* using grid i put nav to the left side */
+/* only had to use word bread to split each character going */
 nav {
     position: fixed;
-    border-style: solid;
-    display: flex;
+    display: grid;
     justify-content: center;
     background-color: #00f2ff;
     top: 0;
-    left: 0;
-    width: 100%;
+    width: 1.5em;
+    height: 100%;
     font-size: 29px;
-
-
+    word-break:break-all;
 }
-#nav-aboutme {
-    padding: 0 4em;
+#nav-aboutme, #nav-projects {
+    border-width: 3px ;
+    box-shadow:  0px 0px 20px red;
+    line-height: 1.3em;
+    padding: .5em;
+    border-style: solid ;
     text-decoration: none;
-}
-#nav-projects{
-    padding: 0 4em;
-    text-decoration: none;
+    max-width: 1ch;
 
 }
+
 nav a:hover {
     background: #00b0ba;
 }
 /* distance from within the block top,left respectively */
 section{
-    padding: .5em 2em;
+    border-style: solid;
+    padding: 1em 1em;
 }
-body {
-    background-color: #00f2ff;
-}
-footer {
+#me {
     display: flex;
-    justify-content: center;
-    color: #0000008b;
-    padding: 0  0 1em  ;
+    justify-content: left;  
 }
-
+#next-to-img {
+    display: grid;
+    padding: 1em;
+}
+#aboutme img {
+    width: 15em;
+    border-style: solid;
+}
 /* set projects in row  */
 #projects {
     display: flex;
     flex-flow: row;
     justify-content:center;
     max-width: 900px;
-
+    border-style: solid;
 }
 /* resize image to fit */
 #projects img {
     display: flex;
     justify-content: center;
     width: 10em;
+    height: 10em;
+    border-style: solid;
+    border-width: 1px;
 }
+
 /* set up text under image to fit  */
 article {
-    padding: 0 0 0 1em;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1em;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    color: #0000008b;
+    padding: 1em  0 1em  ;
 }
